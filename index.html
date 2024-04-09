@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img id="home" src="/assets/keycap-favicon.png" alt="Keycap Favicon">
+            </a>
+            
+            <h1 class="spline-sans">Mechanical Keyboard Collection</h1>
+        </nav>
+    </header>
+    
+    <main>
+        <content id="typing-test-container"></content>
+        <div class="spline-sans" id="filter-container">
+            <h3>Selected:</h3>
+            <div class="selected-filters" id="selected-filters"></div>
+            <button id="clear-filters">Clear Filters</button>
+
+            <h3>Color:</h3>
+            <div class="filter-box">  
+            <input type="checkbox" class="filter color-filter" id="blue" value="blue">
+            <label for="blue">Blue</label>
+            
+            <input type="checkbox" class="filter color-filter" id="red" value="red">
+            <label for="red">Red</label>
+            
+            <input type="checkbox" class="filter color-filter" id="green" value="green">
+            <label for="green">Green</label>
+            
+            <input type="checkbox" class="filter color-filter" id="black" value="black">
+            <label for="black">Black</label>
+            
+            <input type="checkbox" class="filter color-filter" id="white" value="white">
+            <label for="white">White</label>
+            
+            <input type="checkbox" class="filter color-filter" id="grey" value="grey">
+            <label for="grey">Grey</label>
+            
+            <input type="checkbox" class="filter color-filter" id="purple" value="purple">
+            <label for="purple">Purple</label>
+            </div>
+
+        
+            <h3>Switch Type:</h3> 
+            <div class="filter-box">         
+            <input type="checkbox" class="filter switch-filter" id="linear" value="linear">
+            <label for="linear">Linear</label>
+        
+            <input type="checkbox" class="filter switch-filter" id="tactile" value="tactile">
+            <label for="tactile">Tactile</label>
+        
+            <input type="checkbox" class="filter switch-filter" id="clicky" value="clicky">
+            <label for="clicky">Clicky</label>
+        
+            <input type="checkbox" class="filter switch-filter" id="topre" value="topre">
+            <label for="topre">Topre</label>
+            </div>
+            </div>
+        </div>
+        
+
+        <content class="grid-content spline-sans" id="data-display"></content>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
