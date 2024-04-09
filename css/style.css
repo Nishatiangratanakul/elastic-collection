@@ -1,0 +1,172 @@
+/* global styles */
+.spline-sans {
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.entry {
+    width: 100%;
+    height: 200px; 
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
+}
+
+
+#home{
+    width: 5vh;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px 10px;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    background-color: #dbdbdb;
+}
+
+
+/* homepage styles */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px; 
+    margin: 10px;
+    
+}
+
+h1.spline-sans {
+    margin-left: 10px;
+}
+
+object{
+    width: 100vw;
+    height: 400px;
+}
+
+/* subpage styles */
+
+.subpage-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.subpage-content img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    padding: 20px;
+}
+
+.entry-text {
+    flex: 1;
+    padding: 20px;
+    max-width: calc(50vw - 40px); /* Maximum width for the text container to ensure proper spacing */
+}
+
+.inline {
+    display: inline-block;
+    margin: 0; /* Adjust margins as needed */
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.entry-text p {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        position: static;
+        width: 100%;
+    }
+
+    .entry-text {
+        max-width: 100%;
+    }
+}
+
+
+/* Label styles for all filters */
+
+#filter-container {
+    margin-bottom: 50px;
+}
+
+.filter-box { 
+    margin-left: 25px;
+}
+
+.selected-filters{
+    margin-left: 30px;
+}
+
+.banana{
+    margin: 0px 5px;
+}
+
+.banana-wrapper{
+    margin-left: -13px;
+}
+
+h3{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+label {
+    padding: 5px 5px;
+    margin: 0px -5px;
+}
+
+/* Specific background colors for each label */
+#blue + label { background-color: rgb(107, 107, 255);}
+#red + label { background-color: rgb(231, 75, 75); }
+#green + label { background-color: rgb(96, 217, 96); }
+#black + label { background-color: black; color: rgb(235, 232, 226); }
+#white + label { background-color: rgb(251, 246, 242); }
+#grey + label { background-color: rgb(194, 194, 194); }
+#purple + label { background-color: rgb(158, 106, 177); }
+
+/* Specific background colors for each layout label */
+#forty + label { background-color: #dbdbdb;}
+#fortyfive + label { background-color: #dbdbdb; }
+#sixty + label { background-color: #dbdbdb; }
+#sixtyfive + label { background-color: #dbdbdb; }
+#seventyfive + label { background-color: #dbdbdb; }
+#eighty + label { background-color: #dbdbdb; }
+#alice + label { background-color: #dbdbdb; }
+#split + label { background-color: #dbdbdb; }
+#ortholinear + label { background-color: #dbdbdb; }
+#tkl + label { background-color: #dbdbdb; }
+
+/* Specific background colors for each switch type label */
+#linear + label { background-color: rgb(148, 23, 23); color: rgb(235, 232, 226)}
+#tactile + label { background-color: rgb(63, 42, 15); color: rgb(235, 232, 226)}
+#clicky + label { background-color: rgb(55, 161, 196); color: rgb(235, 232, 226)}
+#topre + label { background-color: black; color: rgb(235, 232, 226); }
+
+#clear-filters{
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #dbdbdb;
+    padding: 10px;
+}
